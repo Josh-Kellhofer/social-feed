@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 function App() {
 
-  const [Name, setName] = useState([{name: 'John', text: 'copied text from Add Entry'}])
+  const [entryName, setName] = useState([{listedName: 'John', text: 'copied text from Add Entry'}])
 
 
   return (
@@ -17,6 +17,16 @@ function App() {
             <th>Dislike</th>
             </tr>
         </thead>
+        <tbody>
+          {entryName.map((name)=> {
+            return (
+              <tr>
+                <td>{name.listedName}</td>
+                <td>{name.text}</td>
+              </tr>
+            )
+          })}
+        </tbody>
         </table>
     </div>
   );
