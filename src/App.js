@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DisplayPosts from './DisplayComponents/DisplayPosts/DisplayPosts';
+import CreatePost from './DisplayComponents/DisplayPosts/AddPost/CreatePost';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
   return (
     <div >
       <DisplayPosts parentEntries={entryName} />
+      <CreatePost />
 
     </div>
   );
