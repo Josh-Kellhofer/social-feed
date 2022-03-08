@@ -12,6 +12,8 @@ const CreatePost = (props) => {
       name: name,
       post: post
     };
+    console.log(newPost)
+    props.addNewPost(newPost)
   }
 
   return ( 
