@@ -9,8 +9,8 @@ const CreatePost = (props) => {
   function handleSubmit(event) {
     event.preventDefault();
     let newPost = {
-      name: name,
-      post: post
+      listedName: name,
+      text: post
     };
     console.log(newPost)
     props.addNewPost(newPost)
@@ -18,10 +18,15 @@ const CreatePost = (props) => {
 
   return ( 
     <form onSubmit={handleSubmit}>
-      <label>Name</label>
+      <div className='form-group'>
+      <label className='center'>Name</label>
       <input type='text' value={name} onChange={(event) => setFullName(event.target.value)} />
-      <label>Post</label>
-      <input type ='post' value={post} onChange={(event) => setPost(event.target.value)}  />
+      </div>
+      <div className='form-group'>
+      <label for ='textarea'>Post</label>
+      <textarea class='form-control' id='textarea' rows="3" value={post} onChange={(event) => setPost(event.target.value)}></textarea>
+      {/* <input type ='text' value={post} onChange={(event) => setPost(event.target.value)}  /> */}
+      </div>
       <button type='submit'>Create Post</button>
     </form>
    );

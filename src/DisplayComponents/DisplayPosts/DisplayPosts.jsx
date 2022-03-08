@@ -5,10 +5,12 @@ const DisplayPosts = (props) => {
     <table>
         <thead>
           <tr>
+            <div className='form-group'>
             <th>Name</th>
+            </div>
             <th>Post</th>
-            <th>Like</th>
-            <th>Dislike</th>
+            {/* <th>Like</th>
+            <th>Dislike</th> */}
             </tr>
         </thead>
         <tbody>
