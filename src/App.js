@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-  const [entryName, setName] = useState([{listedName: 'John', text: 'copied text from Add Entry'}, {listedName: 'Mike', text: 'More text'}])
+  const [entryName, setName] = useState([{listedName: '', text: ''}])
 
   function addNewPost(entry){
     let tempPost = [entry, ...entryName];
@@ -14,12 +14,12 @@ function App() {
 
   return (
     <div>
-      <div className='border-box'>
+      <div className='border-box1'>
         <div className='center'>
         <CreatePost addNewPost={addNewPost} />
       </div>
       </div>
-      <div className='border-box'>
+      <div className='border-box2'>
         <DisplayPosts parentEntries={entryName} />
       </div>
 

@@ -2,30 +2,36 @@
 
 const DisplayPosts = (props) => {
   return ( 
-    <table>
+    <group>
         <thead>
-          <tr>
-            <div className='form-group'>
-            <th>Name</th>
-            </div>
-            <th>Post</th>
-            {/* <th>Like</th>
-            <th>Dislike</th> */}
-            </tr>
+         
         </thead>
         <tbody>
           {props.parentEntries.map((name)=> {
             return (
               <tr>
-                <td>{name.listedName}</td>
-                <td>{name.text}</td>
+                <div className='form-group'>
+                <label>Post</label>
+                <td className='DisplayContainer'>
+                  <div>{name.listedName}</div> 
+                  <div className='form-group'>
+                  <div>{name.text}</div>
+                  </div>
+                   </td>
+                
+                  </div>
+               
+               
+                
               </tr>
             )
           })}
         </tbody>
-        </table>
+        </group>
    );
 }
+                
+                  
  
 export default DisplayPosts;
 
