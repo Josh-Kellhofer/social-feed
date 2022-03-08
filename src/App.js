@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import DisplayPosts from './DisplayComponents/DisplayPosts/DisplayPosts';
 
 function App() {
 
@@ -8,26 +8,8 @@ function App() {
 
   return (
     <div >
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Post</th>
-            <th>Like</th>
-            <th>Dislike</th>
-            </tr>
-        </thead>
-        <tbody>
-          {entryName.map((name)=> {
-            return (
-              <tr>
-                <td>{name.listedName}</td>
-                <td>{name.text}</td>
-              </tr>
-            )
-          })}
-        </tbody>
-        </table>
+      <DisplayPosts parentEntries={entryName} />
+
     </div>
   );
 }
