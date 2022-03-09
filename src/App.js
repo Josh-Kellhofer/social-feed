@@ -15,6 +15,9 @@ function App() {
   }
 
   return (
+    // <nav className="nav">
+    //   <div>Social Feed</div>
+    // </nav>
     <div>
       <div className='border-box1'>
         <div className='center'>
@@ -23,10 +26,12 @@ function App() {
       </div>
       <div className='border-box2'>
         <DisplayPosts parentEntries={entryName} />
-        </div>
         <CustomButton message="Like!"/>
         <CustomButton2 message="Dislike!"/>
-     </div>
+        </div>
+        </div>
+        
+     
       
       );
 }
