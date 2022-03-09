@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import DisplayPosts from './DisplayComponents/DisplayPosts/DisplayPosts';
 import CreatePost from './DisplayComponents/DisplayPosts/AddPost/CreatePost';
 import './App.css';
+import CustomButton from './DisplayComponents/CustomButton/CustomButton';
+
+
 
 function App() {
 
+  
   const [entryName, setName] = useState([{listedName: '', text: ''}])
 
   function addNewPost(entry){
@@ -21,10 +25,16 @@ function App() {
       </div>
       <div className='border-box2'>
         <DisplayPosts parentEntries={entryName} />
-      </div>
-
-    </div>
-  );
+        </div>
+        <CustomButton message="Like!"/>
+     </div>
+      
+      );
 }
+
+
+  
+
+
 
 export default App;
