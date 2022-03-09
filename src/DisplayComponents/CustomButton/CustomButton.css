@@ -14,9 +14,13 @@ button:hover {
 }
 
 .active{
-  background-color: teal;
+  background-color: green;
 }
 
 .inactive{
   background-color: grey;
+}
+
+.activedis{
+  background-color: red;
 }
