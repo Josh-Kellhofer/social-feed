@@ -10,14 +10,18 @@ const DisplayPosts = (props) => {
           {props.parentEntries.map((name)=> {
             return (
               <tr>
-                <div className='form-group'>
+                <div className="grid-container">
+                <div className="grid-item">
                   <label>Post</label>
-                    <td className='DisplayContainer'>
-                      <div><p className='p'>{name.listedName}</p></div> 
+                    {/* <td className='DisplayContainer'></td> */}
+
+                      <div><p className="grid item">{name.listedName}</p></div> 
                 <div className='form-group'>
                   <div>{name.text}</div>
+                  
+                  </div>
                       </div>
-                    </td>
+                    
                     
                    </div>
               </tr>

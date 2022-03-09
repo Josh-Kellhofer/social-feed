@@ -6,6 +6,7 @@
   border: 3px;
   border-style: solid;
   border-color: rgb(79, 39, 117);
+  background-color: beige;
   /* border-collapse: collapse; */
   /* margin: 2em; */
   padding: 10em;
@@ -14,6 +15,27 @@
   height: 50px; */
   /* margin-left: 20%; */
   /* margin-right:70%;  */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: lightskyblue;
+  padding: 10px;
+  border: 3px;
+  height: 15em;
+  width: 30em;
+  border-color: purple;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  height: 6em;
+  width: 15em;
+  text-align: center;
 }
 
 .AlignName {
@@ -27,8 +49,9 @@
 .border-box1 {
   border: 3px;
   border-style: solid;
-  border-color: blueviolet;
+  border-color: rgb(60, 52, 68);
   border-collapse: collapse;
+  background-color: rgb(226, 236, 225);
   margin: 2em;
   padding: 1em;
   margin-left: 20%;
@@ -39,9 +62,11 @@
 .border-box2 {
   border: 3px;
   border-style: solid;
-  border-color: blue;
-  margin: 2em;
-  padding: 1em;
+  border-color: purple;
+  background: lightskyblue;
+  margin: 3em;
+  padding: 4em;
+  height: 55em;
   margin-left: 20%;
   margin-right: 20%;
 
