@@ -1,0 +1,4 @@
+.grid-item{
+  overflow-wrap: normal;
+  overflow-x: auto;
+}

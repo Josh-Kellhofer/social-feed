@@ -26,8 +26,8 @@ function App() {
       </div>
       <div className='border-box2'>
         <DisplayPosts parentEntries={entryName} />
-        <CustomButton message="Like!"/>
-        <CustomButton2 message="Dislike!"/>
+        {/* <div<CustomButton message="Like!"/>
+        <CustomButton2 message="Dislike!"/></div> */}
         </div>
         </div>
         

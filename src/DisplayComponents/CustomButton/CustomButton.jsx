@@ -3,47 +3,35 @@ import "./CustomButton.css";
 
 const CustomButton = (props) => {
 
-  const [buttonClass, setButtonClass] = useState("inactive");
+  const [buttonClassLike, setButtonClassLike] = useState("inactive");
+  const [buttonClassDislike, setButtonClassDislike] = useState("inactive");
   
-  function handleClick(){
-      if(buttonClass === "inactive"){
-        setButtonClass("active");
+  function handleClickLike(){
+      if(buttonClassLike === "inactive"){
+        setButtonClassLike("active");
+        setButtonClassDislike("inactive")
       }
       else {
-        setButtonClass("inactive");
+        setButtonClassLike("inactive");
       }
   }
+
+  function handleClickDislike(){
+    if(buttonClassDislike === "inactive"){
+      setButtonClassDislike("activedis");
+      setButtonClassLike("inactive")
+    }
+    else {
+      setButtonClassDislike("inactive");
+    }
+}
+
     return (
       <div>
-        <button className={buttonClass} onClick={handleClick}>{props.message}</button>
+        <button className={buttonClassLike} onClick={handleClickLike}>Like!</button>
+        <button className={buttonClassDislike} onClick={handleClickDislike}>Dislike!</button>
       </div>
     )
    
 };
-
-// export default CustomButton;
-
-const CustomButton2 = (props) => {
-
-  const [buttonClass, setButtonClass] = useState("inactive");
-  
-  function handleClick(){
-      if(buttonClass === "inactive"){
-        setButtonClass("activedis");
-      }
-      else {
-        setButtonClass("inactive");
-      }
-  }
-    return (
-      <div>
-        <button className={buttonClass} onClick={handleClick}>{props.message}</button>
-      </div>
-    )
-}
-
-
-export {
-  CustomButton,
-  CustomButton2,
-}
+export default CustomButton;
